@@ -1,4 +1,4 @@
-Steps for Implementation:
+
 Define Input Structure:
 
 The system should prompt users to enter details like:
@@ -18,3 +18,11 @@ Data Management:
 Store the user input in a structured way, possibly using:
 A list of dictionaries (each dictionary represents a single expense).
 A database or file (JSON, CSV) for persistence if required.
+
+
+
+
+
+
+
+
