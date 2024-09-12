@@ -1,0 +1,15 @@
+from datetime import datetime
+
+def get_monthly_expense_summary(expenses):
+    summary = {}
+    for expense in expenses:
+        month = datetime.strptime(expense['date'], '%Y-%m-%d').strftime('%B %Y')
+        summary[month] = summary.get(month, 0) + expense['amount']
+    return summary
+
+def get_category_wise_summary(expenses):
+    category_summary = {}
+    for expense in expenses:
+        category = expense['category']
+        category_summary[category] = category_summary.get(category, 0) + expense['amount']
+    return category_summary
