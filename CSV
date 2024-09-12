@@ -1,0 +1,18 @@
+import csv
+
+def save_expenses_to_csv(expenses, filename='expenses.csv'):
+    with open(filename, 'w', newline='') as file:
+        writer = csv.DictWriter(file, fieldnames=["date", "amount", "category", "description"])
+        writer.writeheader()
+        writer.writerows(expenses)
+
+def load_expenses_from_csv(filename='expenses.csv'):
+    expenses = []
+    try:
+        with open(filename, newline='') as file:
+            reader = csv.DictReader(file)
+            for row in reader:
+                expenses.append(row)
+    except FileNotFoundError:
+        pass
+    return expenses
