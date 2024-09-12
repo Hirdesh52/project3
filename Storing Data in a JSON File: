@@ -1,0 +1,12 @@
+import json
+
+def save_expenses_to_file(expenses, filename='expenses.json'):
+    with open(filename, 'w') as file:
+        json.dump(expenses, file, indent=4)
+
+def load_expenses_from_file(filename='expenses.json'):
+    try:
+        with open(filename, 'r') as file:
+            return json.load(file)
+    except FileNotFoundError:
+        return []
