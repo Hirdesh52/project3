@@ -1,0 +1,7 @@
+def menu():
+    print("1. Add Expense")
+    print("2. View Expenses")
+    print("3. View Monthly Summary")
+    print("4. Exit")
+    choice = input("Choose an option: ")
+    return choice
