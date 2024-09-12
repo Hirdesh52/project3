@@ -1,0 +1,7 @@
+categories = ['Food', 'Transport', 'Entertainment', 'Other']
+
+def add_expense():
+    category = input("Enter the category (Food, Transport, Entertainment, Other): ")
+    if category not in categories:
+        print("Invalid category! Choose from the predefined categories.")
+    # Rest of the function to add expense
