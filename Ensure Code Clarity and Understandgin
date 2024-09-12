@@ -1,0 +1,12 @@
+def add_expense():
+    """
+    Prompts the user to add an expense.
+    Input:
+        - Date of expense
+        - Amount
+        - Category
+        - Description (optional)
+    Returns:
+        A dictionary with the entered expense data or None in case of invalid input.
+    """
+    # Function logic here
