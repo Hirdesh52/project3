@@ -1,0 +1,6 @@
+def add_expense():
+    try:
+        amount = float(input("Enter the amount: "))
+    except ValueError:
+        print("Invalid amount! Please enter a number.")
+        return None
