@@ -1,0 +1,23 @@
+def add_expense():
+    try:
+        date = input("Enter the date of the expense (YYYY-MM-DD): ")
+        amount = float(input("Enter the amount spent: "))
+        category = input("Enter the category (e.g., food, transport): ")
+        description = input("Enter a short description (optional): ")
+        
+        expense = {
+            "date": date,
+            "amount": amount,
+            "category": category,
+            "description": description
+        }
+        return expense
+    except ValueError:
+        print("Invalid input! Please enter the correct data types.")
+        return None
+
+# Example usage
+expense_data = []
+new_expense = add_expense()
+if new_expense:
+    expense_data.append(new_expense)
