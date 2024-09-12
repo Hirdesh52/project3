@@ -1,0 +1,4 @@
+ou need a way to store the expenses entered by users. This can be done in two ways:
+
+In-Memory (Temporary storage): Store data in variables like lists or dictionaries during the runtime of the program.
+Persistent Storage: Store data in files like JSON, CSV, or databases so that it remains accessible even after the program is closed.
